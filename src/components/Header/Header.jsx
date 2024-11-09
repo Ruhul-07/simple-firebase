@@ -1,7 +1,10 @@
+import { NavLink } from "react-router-dom";
+
 const Header = () => {
     return (
-        <div>
-            <h2 className="text-2xl text-center font-bold mb-10">This is header</h2>
+        <div className="flex gap-4 justify-center my-10 font-bold text-3xl">
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/login">Login</NavLink>
         </div>
     );
 };
